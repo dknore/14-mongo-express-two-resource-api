@@ -1,11 +1,11 @@
 'use strict';
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/cars');
 
-let carSchema = new mongoose.Schema({
-  class: String,
-  cost: Number,
+const carSchema = new mongoose.Schema({
+  make: {type: String, required: true},
+  model: String,
+  color: String,
 });
 
 let Car = mongoose.model('Car', carSchema);
