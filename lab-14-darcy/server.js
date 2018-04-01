@@ -4,6 +4,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const CarSchema = require('');
+const OwnerSchema = require('')
+
 const carRouter = require('./routes/routes.js');
 
 mongoose.connect('mongodb://localhost/cars');

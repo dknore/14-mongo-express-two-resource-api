@@ -1,9 +1,25 @@
+import { Z_STREAM_END } from 'zlib';
+
 'use strict';
 
 const express = require('express');
 const router = express.Router();
 
 const Car = require('../models/car.js');
+
+app.get('/owner', (req, res) => {
+
+    if(req.query.id) {
+        
+        Team.find()
+    }
+})
+
+app.post('')
+
+
+
+
 
 
 router.get('/', (req, res) => {
